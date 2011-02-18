@@ -1,11 +1,11 @@
 c     ******************************************************
 c     * hextest - Testet die C-Subroutine hexin, indem es  *
 c     *           eine zweistellige Hexadezimalzahl ein-   *
-c     *           liest (alle Zeichen auﬂer den            *
+c     *           liest (alle Zeichen au√üer den            *
 c     *           Hexa dezimalziffern werden dabei         *
 c     *           ignoriert) und ihren Wert ausgibt.       *
 c     *                                                    *
-c     * Das Compilieren m¸sste mit                         *
+c     * Das Compilieren m√ºsste mit                         *
 c     *                                                    *
 c     *      g77 -o hextest.exe hexin.c hextest.f          *
 c     *                                                    *
@@ -21,7 +21,7 @@ c
         CALL hexin(eof, c)
 c      
         IF (eof == 1) THEN
-            PRINT *, 'Bin ans Dateiende gestoﬂen!'
+            PRINT *, 'Bin ans Dateiende gesto√üen!'
         ELSE
             PRINT *, 'Das eingelesene kodierte Byte hat den Wert', c
         ENDIF

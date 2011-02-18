@@ -11,7 +11,7 @@
  *      CALL hexin(eof, c)
  *      
  *      IF (eof == 1) THEN
- *          PRINT *, 'Bin ans Dateiende gestoﬂen!'
+ *          PRINT *, 'Bin ans Dateiende gesto√üen!'
  *      ELSE
  *          PRINT *, 'Das eingelesene kodierte Byte hat den Wert', c
  *      ENDIF
@@ -19,14 +19,14 @@
  *      END
  *
  * 
- * Das Compilieren m¸sste mit
+ * Das Compilieren m√ºsste mit
  * 
  *      g77 -o hextest.exe hexin.c hextest.f
  *
  *  gelingen, oder mit dem zweischrittigen
  *
  *      g77 -c hexin.c                             (erstellt hexin.o)
- *      g77 -o hextest.exe hexin.o hextest.f    (f¸gt alles zusammen)
+ *      g77 -o hextest.exe hexin.o hextest.f    (f√ºgt alles zusammen)
  */
 
 #include <stdio.h>
@@ -39,7 +39,7 @@ const int hexval[256];
 /* hexin_ - liest eine zweistellige Hexadezimalzahl von der
  *          Standardeingabe. Falls vor der zweiten Ziffer das Dateiende
  *          erreicht wird, setzt es *eof=1. Ansonsten ist *eof=0 und
- *          *c enth‰lt den Wert der gelesenen Zahl (0-255).  */
+ *          *c enth√§lt den Wert der gelesenen Zahl (0-255).  */
 void hexin_(int * eof, int * c)
 {
         int digit1, digit2;

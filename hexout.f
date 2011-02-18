@@ -1,7 +1,7 @@
 c   ********************************************************
 c   *   hexout(n) - gibt die Zahl n in zwei Hexadezimal-   *
 c   *               ziffern aus und begrenzt dabei die     *
-c   *               Zeilenl‰nge auf 72 Zeichen.            *
+c   *               Zeilenl√§nge auf 72 Zeichen.            *
 c   ********************************************************
 c
       SUBROUTINE hexout(n)
@@ -17,7 +17,7 @@ c     Die Hexadezimalziffern sind:
 c
 c     Sicherstellen, dass 0 <= n <= 255:
       IF ((n .LT. 0) .OR. (n .GT. 255)) THEN
-          WRITE (*, *), 'hexout: Fehler: ', n, ' unzul‰ssig'
+          WRITE (*, *), 'hexout: Fehler: ', n, ' unzul√§ssig'
           CALL exit(1)
       ENDIF
 c
@@ -25,7 +25,7 @@ c     Ausgabe der beiden Hexadeziamlziffern von n:
       WRITE (*, '(a,$)') hexzif(n / 16)
       WRITE (*, '(a,$)') hexzif(mod(n, 16))
 c
-c     Position in der Zeile mitz‰hlen:
+c     Position in der Zeile mitz√§hlen:
       zeilpos = zeilpos + 2
 c
 c     Nach 72 Zeichen eine neue Zeile beginnen:
