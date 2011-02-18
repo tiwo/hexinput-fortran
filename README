@@ -1,0 +1,19 @@
+hexinput-fortran
+================
+
+This is some code I've written in 2006 to provide hexadecimal input and output
+to FORTRAN programs.
+
+Written as an example of integrating C with FORTRAN for a friend of mine; it
+contains a lot of comments in German.
+
+Overview
+========
+
+* hexin.c -- Read hexadecimal input from stdin, with comments explaining usage
+  and compiling
+
+* hextest.f -- example of using hexin.c from FORTRAN
+
+* hexout.f -- Write hexadecimal output to stdout, with a small example
+
